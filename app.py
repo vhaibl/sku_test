@@ -20,7 +20,7 @@ def filter_result(grade, results, sku, temp):
                 results.append((line.decode()).split(','))
             else:
                 decoded_line = (line.decode()).split(',')
-                if float(decoded_line[2]) >= grade:
+                if float(decoded_line[2]) <= grade:
                     results.append(decoded_line)
 
 
